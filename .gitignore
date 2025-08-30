@@ -1,0 +1,37 @@
+# --- Node (base) ---
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Test/coverage caches
+coverage/
+.nyc_output/
+.eslintcache
+.stylelintcache
+.parcel-cache/
+.turbo/
+
+# --- Docusaurus specific ---
+.docusaurus/
+build/
+.cache/
+
+# Keep ONE lockfile committed (choose one of these and commit it)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# --- Env/secrets ---
+.env
+.env.*
+!.env.example   # keep a template checked in
+
+# --- OS/IDE noise ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp

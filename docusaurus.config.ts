@@ -52,6 +52,7 @@ const config: Config = {
             { label: 'Overview', to: '/platform/overview' },
             { label: 'Data Ingestion', to: '/platform/data-ingestion' },
             { label: 'Metrics', to: '/platform/metrics' },
+            { label: 'Central Bank Dataset', to: '/platform/central-bank-data' },
           ],
         },
         {
@@ -65,6 +66,7 @@ const config: Config = {
           items: [
             { label: 'Website', href: 'https://zettaquant.ai' },
             { label: 'Contact', href: 'mailto:contact@zettaquant.ai' },
+            { label: 'Privacy Policy', href: 'https://www.zettaquant.ai/privacy-policy' },
           ],
         },
       ],

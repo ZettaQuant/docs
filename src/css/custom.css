@@ -1,30 +1,129 @@
-/**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
- */
-
-/* You can override the default Infima variables here. */
+/* ==== Brand base tokens (Sky Blue theme) ==== */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  /* Colors */
+  --zq-bg: #fff;                   /* page background (light) */
+  --zq-surface: #f7fafd;           /* cards/nav background */
+  --zq-text: #222e3a;              /* primary text */
+  --zq-text-muted: #6b7a90;
+  --zq-primary: #49C3F1;           /* brand primary */
+  --zq-primary-600: #2FB8ED;
+  --zq-primary-700: #0F9AD6;
+  --zq-accent-dark: #0722EB;
+  --zq-primary-soft: rgba(73, 195, 241, 0.10);
+  --zq-primary-soft-2: rgba(73, 195, 241, 0.20);
+
+  /* Typography */
+  --zq-font: ui-sans-serif, system-ui, "Inter", "Segoe UI", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji";
+
+  /* Shape & effects */
+  --zq-radius: 14px;
+  --zq-radius-sm: 10px;
+  --zq-shadow: 0 10px 30px rgba(73,195,241,.10);
+
+  /* Map to Docusaurus tokens (if needed) */
+  --ifm-font-family-base: var(--zq-font);
+  --ifm-color-primary: var(--zq-primary);
+  --ifm-color-primary-dark: var(--zq-primary-600);
+  --ifm-code-font-size: .95rem;
+  --ifm-container-width-xl: 1200px;
+  --ifm-border-radius: var(--zq-radius-sm);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+/* Dark mode baseline */
+html[data-theme='dark'] {
+  --zq-bg: #101a28;
+  --zq-surface: #16243a;
+  --zq-text: #e6e9ef;
+  --zq-text-muted: #a6adbb;
 }
+
+/* Navbar + link styling */
+.navbar__brand, .navbar__link {
+  font-weight: 600;
+  color: var(--zq-primary);
+}
+.navbar {
+  backdrop-filter: saturate(120%) blur(6px);
+  border-bottom: 1px solid var(--zq-primary-soft-2);
+  background: var(--zq-bg);
+}
+
+/* Hero gradient */
+.hero--primary {
+  background: radial-gradient(1200px 600px at 20% -10%, var(--zq-primary-soft-2), transparent),
+              radial-gradient(1000px 500px at 80% 0%, rgba(7,34,235,.08), transparent),
+              var(--zq-bg);
+  box-shadow: inset 0 -1px 0 var(--zq-primary-soft);
+}
+
+/* Cards */
+.card, .menu__list-item > a.menu__link {
+  background: var(--zq-surface);
+  border-radius: var(--zq-radius);
+  box-shadow: var(--zq-shadow);
+  border: 1px solid var(--zq-primary-soft-2);
+}
+.menu__link--active { background: var(--zq-primary-soft); }
+
+/* Buttons */
+.button.button--primary {
+  background: linear-gradient(180deg, var(--zq-primary), var(--zq-primary-600));
+  border: none;
+  color: white;
+  border-radius: 999px;
+}
+.button.button--secondary {
+  background: var(--zq-primary-soft);
+  color: var(--zq-primary);
+  border: 1px solid var(--zq-primary);
+}
+
+/* Code blocks */
+.theme-code-block, code, pre {
+  border-radius: var(--zq-radius);
+  background: var(--zq-surface);
+  color: var(--zq-accent-dark);
+}
+
+/* Tables */
+table {
+  background: var(--zq-surface);
+  border-radius: var(--zq-radius-sm);
+  overflow: hidden;
+  color: var(--zq-text);
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--zq-text);
+  font-family: var(--zq-font);
+}
+
+/* General text */
+body {
+  background: var(--zq-bg);
+  color: var(--zq-text);
+  font-family: var(--zq-font);
+}
+
+/* Tags / Pills */
+.tag, .pill, .category-tag {
+  background: var(--zq-primary-soft);
+  border-color: var(--zq-primary);
+  color: var(--zq-primary);
+  border-radius: 999px;
+  padding: 0.2em 0.8em;
+  font-weight: 500;
+}
+
+/* Icon containers */
+.icon-container {
+  background: var(--zq-primary-soft);
+  border-color: var(--zq-primary);
+  color: var(--zq-primary);
+  border-radius: 50%;
+  padding: 0.5em;
+}
+
+/* Focus outline */
+:focus { outline-color: var(--zq-primary); }

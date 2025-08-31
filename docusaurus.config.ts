@@ -64,7 +64,7 @@ const config: Config = {
           title: 'Company',
           items: [
             { label: 'Website', href: 'https://zettaquant.ai' },
-            { label: 'Contact', href: 'mailto:hello@zettaquant.ai' },
+            { label: 'Contact', href: 'mailto:contact@zettaquant.ai' },
           ],
         },
       ],
@@ -85,7 +85,11 @@ const config: Config = {
       additionalLanguages: ['python', 'bash', 'json', 'sql'],
     },
 
-    colorMode: { defaultMode: 'dark', respectPrefersColorScheme: true },
+    colorMode: { 
+      defaultMode: 'light', 
+      respectPrefersColorScheme: false,
+      disableSwitch: true  // Completely disable the theme switcher
+    },
   },
 };
 

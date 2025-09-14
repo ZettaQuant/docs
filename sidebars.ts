@@ -19,7 +19,7 @@ const sidebars: SidebarsConfig = {
         'platform/central-bank-data',
       ],
     },
-    { type: 'doc', id: 'faq', label: 'FAQ' },
+    { type: 'doc', id: 'architecture-security-faq', label: 'Architecture & Security FAQ' },
   ],
 };
 

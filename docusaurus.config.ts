@@ -38,7 +38,7 @@ const config: Config = {
       logo: { alt: 'ZettaQuant', src: 'img/logo.svg' },
       items: [
         { to: '/', label: 'Docs', position: 'left' },
-        { to: '/faq', label: 'FAQ', position: 'left' },
+        { to: '/architecture-security-faq', label: 'Architecture & Security FAQ', position: 'left' },
         { href: 'https://zettaquant.ai', label: 'zettaquant.ai', position: 'right' },
         { href: 'https://github.com/zettaquant/docs', label: 'GitHub', position: 'right' },
       ],

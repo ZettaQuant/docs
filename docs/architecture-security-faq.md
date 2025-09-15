@@ -153,7 +153,7 @@ This document provides responses to common security, compliance, and architectur
 <details>
 <summary>What external libraries or services are used?</summary>
 
-**Answer:** Open-source Python packages (e.g., `transformers`, `pymupdf`) from the **Snowflake Anaconda channel**. We do NOT use any package avaialble outside Snowflake Anaconda channel.   
+**Answer:** Open-source Python packages (e.g., `transformers`, `pdfplumber`) from the **Snowflake Anaconda channel**. We do NOT use any package available outside Snowflake Anaconda channel.   
 </details>
 
 <details>
@@ -289,7 +289,7 @@ This document provides responses to common security, compliance, and architectur
 - **Public Endpoints:** None  
 - **External Integrations:** None  
 - **Networking:** No use of `0.0.0.0` or external egress rules  
-- **CVE Scans:** Performed with Trivy 
+- **CVE Scans:** Performed with Trivy by Aqua Security
 - **Malware Scans:** Conducted via ClamAV; 0 infections detected  
 - **Runtime User:** Non-root with minimum privileges  
 

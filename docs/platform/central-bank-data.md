@@ -33,6 +33,7 @@ FOMC, ECB, BoJ, RBI, PBoC, BoE, MAS, BdM, CNB, CBRT, CBR, BSP, CBoC, CBC, BNM, R
 |-------|-------------|
 | `DOCUMENT_ID` | Unique identifier for each document |
 | `REGION` | Central bank name |
+| `YEAR` | Year the meeting was held |
 | `MEETING_START_DATE` | Start date of policy meeting |
 | `MEETING_END_DATE` | End date of policy meeting |
 | `RELEASE_DATE` | Date minutes were released |

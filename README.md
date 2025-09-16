@@ -1,6 +1,6 @@
 # ZettaQuant Documentation Repository
 
-ZettaQuant offers a Snowflake native app that enables financial institutions to analyze both structured and unstructured textual data, and generate user-defined metrics on any topic with just a few clicks and minimal effort. The architecture for the native app is outlined as follows:
+ZettaQuant offers a Snowflake native app that enables financial institutions to analyze both structured & unstructured textual data, and generate user-defined metrics on any topic with just a few clicks and minimal effort. The architecture for the native app is outlined as follows:
 
 <img width="1010" height="540" alt="Native App Architecture" src="https://github.com/user-attachments/assets/fd5a3ff1-562e-4283-9b81-df0809dea2ff" />
 

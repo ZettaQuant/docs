@@ -30,7 +30,7 @@ This Service Level Agreement ("SLA") defines the levels of service, support, and
 
 | Severity | Definition | Free Tier | Paid Tier |
 |----------|------------|------------------------|-----------|
-| **Sev 1 (Critical)** | Application completely down, no workaround | Classified as Sev 4 | 24×7 response within 1 hour, continuous work until resolution |
+| **Sev 1 (Critical)** | Application completely down, no workaround | Classified as Sev 4 | 24×7 response within 6 hours, continuous work until resolution |
 | **Sev 2 (High)** | Major functionality impaired, no acceptable workaround | Classified as Sev 4 | Response within 4 business hours, resolution within 1 business day |
 | **Sev 3 (Medium)** | Minor functionality impaired, workaround exists | Classified as Sev 4 | Response within 1 business day, resolution within 2 business days |
 | **Sev 4 (Low)** | General questions, documentation, “how to” requests | Community forum only | Response within 2 business days |

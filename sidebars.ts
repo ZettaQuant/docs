@@ -17,9 +17,11 @@ const sidebars: SidebarsConfig = {
         'platform/data-ingestion',
         'platform/metrics',
         'platform/central-bank-data',
+        'platform/SDLC',
       ],
     },
     { type: 'doc', id: 'architecture-security-faq', label: 'Architecture & Security FAQ' },
+    { type: 'doc', id: 'SLA', label: 'Service Level Agreement' },
   ],
 };
 

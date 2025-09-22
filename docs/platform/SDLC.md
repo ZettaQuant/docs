@@ -66,9 +66,7 @@ Our SDLC includes:
 - Containers run as **non-root `appuser`** with minimal privileges.
 
 ### Incident Response
-- SLA published ([see SLA.md](../SLA.md)).  
-- Free tier: Sev 4 only, community forum.  
-- Paid tier: Sev 1–3 covered with escalation to engineering.  
+- SLA published ([see SLA.md](../SLA.md)).
 - Contact: **support@zettaquant.ai**
 
 ---

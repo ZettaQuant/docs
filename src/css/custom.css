@@ -43,9 +43,31 @@ html[data-theme='dark'] {
   color: var(--zq-primary);
 }
 .navbar {
-  backdrop-filter: saturate(120%) blur(6px);
   border-bottom: 1px solid var(--zq-primary-soft-2);
   background: var(--zq-bg);
+}
+
+/* Mobile menu styles */
+.navbar-sidebar {
+  background-color: var(--zq-bg);
+}
+
+.navbar-sidebar__backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-sidebar__brand {
+  background-color: var(--zq-bg);
+}
+
+.navbar-sidebar__items {
+  padding: 1rem;
+}
+
+/* Ensure mobile toggle button is visible and clickable */
+.navbar__toggle {
+  color: var(--zq-primary);
+  z-index: 100;
 }
 
 /* Hero gradient */

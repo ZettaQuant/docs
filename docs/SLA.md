@@ -1,7 +1,7 @@
 # Service Level Agreement (SLA)
 
 **Effective Date:** 09/16/2025.  
-**Updated Date:** 09/22/2025. 
+**Updated Date:** 09/22/2025.  
 **Applies to:** ZettaQuant Native App ("the Application"). 
 
 ---
@@ -34,7 +34,7 @@ This Service Level Agreement ("SLA") defines the levels of service, support, and
   - **Integrity** (e.g., unauthorized modification, app compromise),  
   - **Availability** (e.g., outage, denial of service).  
 - **0-day Vulnerability:** A vulnerability disclosed or observed for which no vendor patch is available at initial disclosure.  
-- **CVSS Severity:** Industry-standard scoring used for vulnerability prioritization (Critical ≥9.0; High 7.0–8.9; Medium 4.0–6.9; Low <4.0).
+- **CVSS Severity:** Industry-standard scoring used for vulnerability prioritization (Critical >=9.0; High 7.0–8.9; Medium 4.0–6.9; Low &lt;4.0).
 
 ---
 
@@ -96,10 +96,10 @@ We use risk-based vulnerability remediation aligned to **CVSS** and operational 
 
 | CVSS / Risk | Remediation Target | Interim Controls |
 |---|---|---|
-| **Critical (≥9.0)** | **7 calendar days** (if no patch available, deploy compensating controls within **48 hours** and patch as soon as possible) | Configuration hardening, rule updates, feature flags, access revocation |
+| **Critical (>=9.0)** | **7 calendar days** (if no patch available, deploy compensating controls within **48 hours** and patch as soon as possible) | Configuration hardening, rule updates, feature flags, access revocation |
 | **High (7.0–8.9)** | **15 calendar days** | As needed based on exposure |
 | **Medium (4.0–6.9)** | **30 calendar days** | As needed |
-| **Low (<4.0)** | Best effort / next planned release | N/A |
+| **Low (&lt;4.0)** | Best effort / next planned release | N/A |
 
 - **0-day handling:** implement compensating controls within **48 hours**, communicate recommended workarounds, and ship a fix promptly when available.  
 - If remediation depends on upstream vendors/platforms, timelines may adjust accordingly; we will publish rationale and updated ETA.

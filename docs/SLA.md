@@ -99,7 +99,7 @@ We use risk-based vulnerability remediation aligned to **CVSS** and operational 
 | **Critical (>=9.0)** | **7 calendar days** (if no patch available, deploy compensating controls within **48 hours** and patch as soon as possible) | Configuration hardening, rule updates, feature flags, access revocation |
 | **High (7.0–8.9)** | **15 calendar days** | As needed based on exposure |
 | **Medium (4.0–6.9)** | **30 calendar days** | As needed |
-| **Low (&lt;4.0)** | Best effort / next planned release | N/A |
+| **Low (&lt;4.0)** | Best effort / next planned release | N/A | 
 
 - **0-day handling:** implement compensating controls within **48 hours**, communicate recommended workarounds, and ship a fix promptly when available.  
 - If remediation depends on upstream vendors/platforms, timelines may adjust accordingly; we will publish rationale and updated ETA.

@@ -26,6 +26,9 @@ Our SDLC includes:
      - **Malware scan:** ClamAV.
      - **CVE vulnerability scan:** Trivy.
    - **pip-audit** run for dependency scanning.
+   - Static Application Security Testing (SAST):
+      - **Semgrep** — OWASP Top 10 and language-specific vulnerability rules.
+      - **SonarQube Community Edition** — additional static analysis and code quality checks.
    - Unit, integration, and end-to-end tests on dev branch.
 5. **Release**
    - Only after passing scans & reviews, code is merged into the **prod repo**.
@@ -51,7 +54,9 @@ Our SDLC includes:
 ### Automated Security Scans
 - **ClamAV** -> Malware detection at every commit.  
 - **Trivy** -> Container image vulnerability scanning.  
-- **pip-audit** -> Python dependency vulnerability scanning.  
+- **pip-audit** -> Python dependency vulnerability scanning. 
+- **Semgrep and SonarQube** — Static application security testing and code quality gates.
+
 - Results must pass policy thresholds before merge.
 
 ### Environment Separation

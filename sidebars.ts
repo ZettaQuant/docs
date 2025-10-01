@@ -18,6 +18,7 @@ const sidebars: SidebarsConfig = {
         'platform/metrics',
         'platform/central-bank-data',
         'platform/SDLC',
+        'performance-benchmark',
       ],
     },
     { type: 'doc', id: 'architecture-security-faq', label: 'Architecture & Security FAQ' },

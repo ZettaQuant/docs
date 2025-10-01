@@ -149,3 +149,7 @@ body {
 
 /* Focus outline */
 :focus { outline-color: var(--zq-primary); }
+
+.theme-doc-markdown table {
+  background: transparent !important;
+}

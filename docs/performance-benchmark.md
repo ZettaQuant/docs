@@ -29,11 +29,25 @@ Our SEAL pipeline consistently outperforms leading large language models (LLMs) 
 | Jamba 1.5 Mini           | 0.765                | 0.151                            | 0.682      | 0.533   |
 | Cohere Command R +       | 0.699                | 0.118                            | 0.812      | 0.543   |
 
+## ZQ_CLASSIFY Performance
+
+We have also developed a separate classification system called **ZQ_CLASSIFY** that demonstrates superior performance across all benchmarks:
+
+### Comparative Results (averaged across 3 seeds)
+
+| Dataset | AI_CLASSIFY | ZQ_CLASSIFY |
+|---------|-------------|-------------|
+| Headlines | 0.533 | **0.865** |
+| Congressional Committee Hearings | 0.620 | **0.660** |
+| Financial PhraseBank | 0.928 | **0.980** |
 
 :::info Datasets
 **A. Financial PhraseBank** — Sentiment classification dataset of ~4.8k annotated financial sentences from news. [Malo et al., JASIST, 2014](https://asistdl.onlinelibrary.wiley.com/doi/abs/10.1002/asi.23062)  
 
 **B. Claim Detection (Earnings Calls & Analyst Reports)** — Numerical claim detection benchmark on analyst reports & earnings calls. [ACL Anthology 2024.fever-1.21](https://aclanthology.org/2024.fever-1.21/)  
 
-**C. News Headlines (Gold News Dataset)** — Financial news headlines dataset introduced by *Ankur Sinha & Tanmay Khandait (2020)*, used to extract multiple semantic dimensions (e.g. price direction, temporal reference, asset comparison) from gold-related news headlines. [arXiv:2009.04202](https://arxiv.org/abs/2009.04202)  
+**C. News Headlines (Gold News Dataset)** — Financial news headlines dataset introduced by *Ankur Sinha & Tanmay Khandait (2020)*, used to extract multiple semantic dimensions (e.g. price direction, temporal reference, asset comparison) from gold-related news headlines. [arXiv:2009.04202](https://arxiv.org/abs/2009.04202) 
+
+**D. CoCoHD: Congress Committee Hearing Dataset** — Dataset for analyzing congressional committee hearings with price increase/decrease classifications. *Arnav Hiray, Yunsong Liu, Mingxiao Song, Agam Shah, Sudheer Chava* [arXiv:2410.03099](https://arxiv.org/pdf/2410.03099)
 :::
+
